@@ -7,5 +7,42 @@
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="player-info">
+      <form id="player-form">
+        <fieldset>
+          <legend>Choose the name of players</legend>
+          <div class="input-field">
+            <label for="player-1">Enter the name of player-1(&times;)</label>
+            <input type="text" id="player-1" required />
+          </div>
+          <div class="input-field">
+            <label for="player-2">Enter the name of player-2(&#9675;)</label>
+            <input type="text" id="player-2" required />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </fieldset>
+      </form>
+      <fieldset class="status hidden">
+        <legend>Status</legend>
+        <h1 class="result"></h1>
+      </fieldset>
+
+      <button id="reset" class="btn hidden">Reset Game</button>
+    </div>
+
+    <div class="gameboard hidden">
+      <div id="One" class="square"></div>
+      <div id="Two" class="square"></div>
+      <div id="Three" class="square"></div>
+      <div id="Four" class="square"></div>
+      <div id="Five" class="square"></div>
+      <div id="Six" class="square"></div>
+      <div id="Seven" class="square"></div>
+      <div id="Eight" class="square"></div>
+      <div id="Nine" class="square"></div>
+    </div>
+  </body>
 </html>
